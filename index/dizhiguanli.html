@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link href="//haitao.nos.netease.com" rel="dns-prefetch">
+    <link href="//nos.netease.com" rel="dns-prefetch">
+    <link href="//mm.bst.126.net" rel="dns-prefetch">
+    <title>订单确认页-网易考拉海购</title>
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <meta name="keywords" content="跨境,海淘,进口,母婴用品,美妆个护,美食保健,美妆个护,海淘,商城">
+    <meta name="description" content="网易考拉海购-安全、放心的跨境海淘网站，官方认证，正品保证。轻松购遍海外进口母婴，进口美食 ，进口美妆、进口电子数码，更多产品正陆续推出。">
+    <meta name="renderer" content="webkit">
+    <link rel="shortcut icon" href="//mm.bst.126.net/favicon.ico">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" href="//mm.bst.126.net/r/core_1c4d9fc4223697d9ebfb486248dcfd4b.css">
+    <link rel="stylesheet" href="//mm.bst.126.net/r/core_1c4d9fc4223697d9ebfb486248dcfd4b.css">
+    <link rel="stylesheet" href="//mm.bst.126.net/r/pt_pages_order_order_confirm_9d5f29725039183778c03fbb57a09e08.css">
+    <style type="text/css">
+    @charset "UTF-8";
+    /*查看兑换码*/
+    
+    .m-seeCodeModal .modal-body {
+        padding: 30px 59px;
+    }
+    
+    .m-seeCodeModal .m-modal-message {
+        text-align: left;
+        padding-bottom: 18px;
+    }
+    
+    .m-seeCodeModal .code {
+        margin-bottom: 15px;
+        padding: 8px 0 14px;
+        border-bottom: 1px solid #ddd;
+    }
+    
+    .m-seeCodeModal .m-exchangecode {
+        line-height: 24px;
+    }
+    
+    .m-seeCodeModal .from-label,
+    .m-seeCodeModal .from-content {}
+    
+    .m-seeCodeModal .from-label {
+        float: left;
+        line-height: 36px;
+    }
+    
+    .m-seeCodeModal .from-content {
+        padding-left: 90px;
+    }
+    
+    .m-seeCodeModal .from-content input {
+        padding: 10px;
+        width: 218px;
+        height: 14px;
+        font-size: 12px;
+        color: inherit;
+        border: 1px solid #d5d5d5;
+    }
+    
+    .m-seeCodeModal .send-tip {
+        line-height: 27px;
+        font-size: 12px;
+        color: #999;
+    }
+    
+    .m-seeCodeModal .m-exchangecode .has-error {
+        color: #D22147;
+    }
+    
+    .m-alert-modal {}
+    
+    .m-exchange .title .iconfont,
+    .m-alert-modal .iconfont {
+        margin-right: 8px;
+        font-size: 24px;
+    }
+    
+    .m-exchange .text,
+    .m-exchange .title .iconfont,
+    .m-alert-modal .text,
+    .m-alert-modal .title .iconfont {
+        vertical-align: middle;
+    }
+    
+    .m-exchange .title,
+    .m-alert-modal .title {
+        font-size: 23px;
+    }
+    
+    .m-seeCodeModal .iconfont.error,
+    .m-alert-error .title .iconfont {
+        color: #c20d38;
+    }
+    
+    .m-seeCodeModal .iconfont.success,
+    .m-alert-success .title .iconfont {
+        color: #5dc540;
+    }
+    
+    .m-exchange .title .iconfont {
+        margin-right: 12px;
+    }
+    
+    .m-exchange .code,
+    .m-exchange .error-tip,
+    .m-exchange .operation-tip {
+        padding-left: 36px;
+    }
+    
+    .m-exchange .code {
+        overflow: hidden;
+    }
+    
+    .m-exchange .code li {
+        padding-right: 25px;
+        float: left;
+    }
+    
+    .m-exchange .error-tip {
+        padding-top: 9px;
+        padding-bottom: 9px;
+        border-bottom: 1px solid #ddd;
+    }
+    
+    .m-exchange .operation-tip {
+        margin-bottom: 2px;
+        padding-top: 7px;
+        padding-bottom: 7px;
+    }
+    
+    .m-exchange .operation-tip .u-jump-url {
+        padding: 0 5px;
+    }
+    </style>
+    <style type="text/css">
+    @charset "UTF-8";
+    /* 下拉框 */
+    
+    .m-suggest {
+        position: relative;
+        display: inline-block;
+        height: 36px;
+        line-height: 36px;
+    }
+    
+    .m-suggest .sglist {
+        display: block;
+        position: absolute;
+        top: 37px;
+        _top: 37px;
+        left: 0;
+        width: 320px;
+        border: 1px solid #ddd;
+        border-top: none;
+        background-color: #fff;
+        z-index: 999;
+    }
+    
+    .m-suggest .sglist li {
+        height: 14px;
+        line-height: 14px;
+        padding: 10px 10px 10px 45px;
+        cursor: pointer;
+    }
+    
+    .m-suggest .sglist li.z-crt {
+        background-color: #f7f7f7;
+    }
+    </style>
+</head>
+
+<body>
+    <nav id="topNav">
+        <div id="topNavWrap" class="clearfix">
+            <div id="topNavLeft">
+                <!--Regular if0-->
+                考拉欢迎你！<a class="login" href="/login.html?target=http%3A%2F%2Fwww.kaola.com%2Fproduct%2F248061.html%3Fri%3Dnavigation%26from%3Dpage1%26zn%3Dresult%26zp%3Dpage1-0%26position%3D0%26istext%3D0%26srId%3D8eb9fbf913ad05cc80c6df88216cf84d" data-param="zn=top">登录</a><span class="sep">|</span><a target="_blank" href="http://reg.163.com/reg/innerDomainReg.do?product=kaola&amp;url=http://global.163.com/urs/redirect.html?target=http%3A%2F%2Fwww.kaola.com%2Fproduct%2F248061.html%3Fri%3Dnavigation%26from%3Dpage1%26zn%3Dresult%26zp%3Dpage1-0%26position%3D0%26istext%3D0%26srId%3D8eb9fbf913ad05cc80c6df88216cf84d" data-param="zn=top">免费注册</a>
+            </div>
+            <div id="topNavLeft2">
+                <a class="app" href="//app.kaola.com" rel="nofollow" data-param="from=topDownload&amp;zn=top">
+                    <i class="iconfont icn"></i>手机考拉海购 <span class="m-notice">
+                        <img src="//mm.bst.126.net/images/index/2dcode-app3.jpg?v=1" width="116px" height="116px">
+                        <strong class="txt">下载APP<br>领1000元新人礼包</strong>
+                        <span class="arrow">
+                            <span class="arr"></span>
+                    <span class="arr1"></span>
+                    </span>
+                    </span>
+                </a>
+            </div>
+            <ul id="topNavRight">
+                <li class="dropmenu greenhand" id="js-greenhand" data-isindex="0">
+                    <div class="mcDropMenuBox " id="auto-id-1483514273492">
+                        <a class="toplevel topNavHolder nolink" href="javascript:void(0)" rel="nofollow"><i class="w-icon w-icon-speaker">&nbsp;</i>新人礼</a><span class="sep">|</span>
+                        <div class="mcDropMenu">
+                            <img alt="新人礼" id="js-greenhandimg">
+                            <p>新人礼已放入您的购物车，您只需结算和新人礼相同仓库的商品即可免费拿走它!</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="javascript:;" class="toplevel newnav checkin" rel="nofollow" id="auto-id-1483514273514"><i class="iconfont icn"></i>每日签到</a><span class="sep">|</span>
+                </li>
+                <li><a class="toplevel" href="//www.kaola.com/personal/my_order_new.html" user="true" rel="nofollow" data-param="zn=top">我的订单</a><span class="sep">|</span></li>
+                <li class="dropmenu personal" id="j-dropmenuPersonal">
+                    <div class="mcDropMenuBox" id="auto-id-1483514273493">
+                        <a class="toplevel topNavHolder" href="//www.kaola.com/personal/my_order_new.html" user="true" rel="nofollow" data-param="zn=top">个人中心<i class="arr"></i><em class="w-icon w-icon-14" style="display:none;" id="personalTips"></em></a><span class="sep">|</span>
+                        <div class="mcDropMenu">
+                            <a href="//www.kaola.com/personal/my_coupon.html" user="true" rel="nofollow" data-param="zn=top"><span class="cnt">我的优惠券<i class="w-icon w-icon-15" style="display:none;" id="couponTip"></i></span></a>
+                            <a href="//www.kaola.com/personal/my_point/index.html" user="true" rel="nofollow" data-param="zn=top">
+                                <span class="cnt">我的考拉豆</span>
+                            </a>
+                            <span class="spliter"></span>
+                            <a href="//www.kaola.com/personal/account_security.html" user="true" rel="nofollow" data-param="zn=top"><span class="cnt">账户安全</span></a>
+                            <a href="//www.kaola.com/personal/authentication.html" user="true" rel="nofollow" data-param="zn=top"><span class="cnt">我的实名认证</span></a>
+                            <span class="spliter"></span>
+                            <a href="//www.kaola.com/personal/listfavorite.html" user="true" rel="nofollow" data-param="zn=top"><span class="cnt">我收藏的商品</span></a>
+                            <a href="//www.kaola.com/personal/brands.html" user="true" rel="nofollow" data-param="zn=top"><span class="cnt">我关注的品牌</span></a>
+                            <span class="spliter"></span>
+                            <a href="//www.kaola.com/personal/service_records.html" user="true" rel="nofollow" data-param="zn=top"><span class="cnt">售后管理<i class="w-icon w-icon-14" style="display:none;" id="aftersaleTip"></i></span></a>
+                            <a id="mypartnerTop" style="display:none;" href="//www.kaola.com/personal/my_partner_team.html" user="true" rel="nofollow" data-param="zn=top"><span class="cnt">我的合伙人</span></a>
+                        </div>
+                    </div>
+                </li>
+                <li class="dropmenu service">
+                    <div class="mcDropMenuBox" id="auto-id-1483514273494">
+                        <a class="toplevel topNavHolder nolink" href="javascipt:void(0);" rel="nofollow">客户服务<i class="arr"></i></a><span class="sep">|</span>
+                        <div class="mcDropMenu">
+                            <a class="contact" rel="nofollow" data-category="联系客服" data-event="顶部通栏点击数" data-label="" id="auto-id-1483514273497"><i class="w-icon w-icon-contact"></i>联系客服</a>
+                            <a class="help" href="//www.kaola.com/footer/faq.shtml" rel="nofollow" data-param="zn=top"><i class="w-icon w-icon-help">&nbsp;</i>帮助中心</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="dropmenu recharge">
+                    <div class="mcDropMenuBox" id="auto-id-1483514273495">
+                        <a class="toplevel topNavHolder nolink" href="javascipt:void(0);" rel="nofollow">充值中心<i class="arr"></i></a><span class="sep">|</span>
+                        <div class="mcDropMenu">
+                            <a id="gameRecharge" href="http://game.kaola.com/" rel="nofollow" data-param="zn=top">游戏充值</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="cinform"><a class="toplevel" id="customerInform" href="//www.kaola.com/footer/inform.shtml" rel="nofollow" data-param="zn=top">消费者告知书</a><span class="sep">|</span></li>
+                <li class="dropmenu more">
+                    <div class="mcDropMenuBox focuson" id="auto-id-1483514273496">
+                        <a class="toplevel topNavHolder nolink" href="javascipt:void(0);" rel="nofollow">更多<i class="arr"></i></a>
+                        <div class="mcDropMenu">
+                            <a id="addFavBtn" href="javascript:;" rel="nofollow">收藏本站</a>
+                            <a class="wb clearfix" href="http://weibo.com/u/5448480859" target="_blank" rel="nofollow">
+                                <span class="txt">新浪微博</span>
+                                <span class="m-notice m-notice-1">
+                                  <img src="//mm.bst.126.net/images/index/2dcode-wb.jpg" width="100px" height="100px">
+                                  <span class="arrow">
+                                    <span class="arr"></span>
+                                <span class="arr1"></span>
+                                </span>
+                                </span>
+                            </a>
+                            <a class="nolink clearfix" href="javascript:void(0);" rel="nofollow">
+                                <span class="txt">微信公众号</span>
+                                <span class="m-notice">
+                                  <img src="//mm.bst.126.net/images/index/2dcode-wx.jpg" width="100px" height="100px">
+                                  <span class="arrow">
+                                    <span class="arr"></span>
+                                <span class="arr1"></span>
+                                </span>
+                                </span>
+                            </a>
+                            <a class="yixin nolink clearfix" href="javascript:void(0);" rel="nofollow">
+                                <span class="txt">易信公众号</span>
+                                <span class="m-notice m-notice-2">
+                                      <img src="//mm.bst.126.net/images/index/2dcode-yx.jpg" width="100px" height="100px">
+                                      <span class="arrow">
+                                        <span class="arr"></span>
+                                <span class="arr1"></span>
+                                </span>
+                                </span>
+                            </a>
+                            <a class="cooperation" href="//www.kaola.com/merchants.html?type=en" rel="nofollow" data-param="zn=top">招商合作</a>
+                            <a class="richjob" href="http://hr.163.com/zc/kaola/index.html" rel="nofollow" data-param="zn=top" target="_blank">考拉招聘</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header id="docHead" class="j-indexTopFixed">
+        <div id="docHeadWrap">
+            <a href="//www.kaola.com/" class="logokaola" title="网易考拉海购" data-param="zn=top"></a>
+            <div class="logo f-dn">
+                <a class="logokaolalt" href="//www.kaola.com/" data-param="zn=top"></a>
+            </div>
+        </div>
+    </header>
+    <article class="mainWrap orderMain confirmStyle">
+        <div class="orderConfirmCon clearfix" id="orderConfirmCon">
+            <div class="oShow" id="addrInfoTab">
+                <h3 class="stp1"><strong>选择收货地址</strong></h3>
+                <div class="oShowCon" id="addrInfoBox">
+                    <div id="addressContainer"></div>
+                    <table class="o_tb1 editAd_tb" _type="edit" width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <colgroup>
+                            <col width="31.6%">
+                            <col width="2.6%">
+                            <col width="31.6%">
+                            <col width="2.6%">
+                            <col width="31.6%">
+                        </colgroup>
+                        <tbody id="addrEditBody">
+                            <!--Regular list-->
+                            <tr class="">
+                                <!--Regular list-->
+                                <td>
+                                    <div id="auto-id-1483598643212" class="adrWrap wrapChecked">
+                                        <div class="adrLabel checked"><span class="receiver"><strong>详细地址&nbsp;&nbsp;收</strong>&nbsp;<!--Regular if29--><b class="default">默认地址</b></span><span class="addressText">陕西省&nbsp;&nbsp;西安市&nbsp;&nbsp;雁塔区<br><b title="详细地址">详细地址</b>&nbsp;&nbsp;<br>137****1513</span><span class="opSpan" style="display: none;"><a class="mod" href="javascript:;">修改</a><a class="del" href="javascript:;">删除</a></span>
+                                            <div class="editFormWrap"></div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <!--Regular if30-->
+                                <!--Regular if31-->
+                                <td class="padding">
+                                    <div></div>
+                                </td>
+                            </tr>
+                            <tr class="operateAddr">
+                                <td>
+                                    <!--Regular if32-->
+                                    <!--Regular if33--><span class="addNewAddr">+新增收货地址</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!--Regular if1-->
+                </div>
+            </div>
+            <div class="oShow orderwrap" id="orderInfoBox">
+                <h3 class="stp2"><strong>确认商品信息</strong></h3>
+                <!--Regular if6-->
+                <div class="oShowCon oShowStp4">
+                    <!--Regular list-->
+                    <div class="goodsSource">杭州1号仓 发货</div>
+                    <div class="m-goodstbl">
+                        <div class="thead f-cb">
+                            <span class="col col1">商品信息</span>
+                            <span class="col col2">重量(千克)</span>
+                            <span class="col col3">单价(元)</span>
+                            <span class="col col4">数量</span>
+                            <span class="col col5">金额(元)</span>
+                        </div>
+                        <div class="tbody">
+                            <ul class="glst">
+                                <!--Regular list-->
+                                <li class="goodsitm f-cb">
+                                    <div class="col col1" title="zippo 之宝 打火机 经典铬缎纱 205">
+                                        <!--Regular if34-->
+                                        zippo 之宝 打火机 经典铬缎纱 205
+                                        <em class="sku_mod"></em>
+                                    </div>
+                                    <div class="col col2">0.08</div>
+                                    <div class="col col3">79.00
+                                        <!--inlcude-->
+                                        <!--Regular if35-->
+                                    </div>
+                                    <div class="col col4">1</div>
+                                    <div class="col col5">
+                                        <div class="amountcol">
+                                            <em class="amount">79.00</em>
+                                            <!--inlcude-->
+                                            <!--Regular if36-->
+                                        </div>
+                                    </div>
+                                    <!--inlcude-->
+                                    <!--Regular if37-->
+                                </li>
+                            </ul>
+                            <div class="taxrow">本单税费：¥0.00</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="oShow">
+                    <div class="m-settlement">
+                        <div class="cutbox">
+                            <!--Regular if11-->
+                            <!--Regular if12-->
+                            <div class="row row-coupon f-cb">
+                                <div class="m-usecoupon f-vama">
+                                    <span class="chose">
+    	<span class="wrap">
+	        <label class="m-checkbox  m-disabled">
+	            <span class="box"><i></i><em></em></span>
+                                    <span class="lbl">使用优惠券(0)</span>
+                                    </label>
+                                    <!--Regular if13-->
+                                    </span>
+                                    </span>
+                                    <span class="reduce">
+    <!--Regular if14-->
+        <!--Regular if15-->
+        <span>-¥0.00</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="row row-exchange">
+                                <div class="m-exchange ">
+                                    <p class="optline"><a class="alink">兑换优惠券</a></p>
+                                    <div class="exchangebox f-cb" style="display: none;">
+                                        <input class="u-ipt " placeholder="请输入优惠码">
+                                        <a class="exchangebtn">兑换</a>
+                                        <b class="u-errtt f-vama" style="display: none;"><i class="u-icnft"></i> </b>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="paybox f-cb">
+                            <div class="invoicebox f-fl">
+                                <div class="m-invoicebox f-cb">
+                                    <span class="f-fl">发票信息：</span>
+                                    <!--Regular if16-->
+                                    <label class="m-checkbox  f-fl">
+                                        <span class="box"><i></i><em></em></span>需要发票
+                                    </label>
+                                    <!--Regular if17-->
+                                    <!--Regular if18-->
+                                    <!--Regular if19-->
+                                </div>
+                                <dl class="u-invoiceTip">
+                                    <dt>发票须知：</dt>
+                                    <dd>1. 保税仓发货商品与海外仓发货商品属跨境海外商品，无法开具国内发票</dd>
+                                    <dd>2. 自营国内仓商品(即苏州仓、杭州1号仓与杭州2号仓的商品)支持开具电子发票，电子发票在确认收货后48小时内开具</dd>
+                                    <dd>3. 杭州1号仓商品，若开具纸质发票，发票随包裹一起寄出</dd>
+                                    <dd>4. 苏州仓、杭州2号仓商品，若开具纸质发票，发票在确认收货后7-30天单独寄出</dd>
+                                    <dd>5. 第三方商家发票以实际收到为准</dd>
+                                    <dd>6. 如需增值税专用发票，请在购买后联系客服</dd>
+                                    <dd><a href="/footer/invoicefaq.shtml" target="_blank">发票相关问题&gt;</a></dd>
+                                </dl>
+                            </div>
+                            <div class="amountbox f-fr">
+                                <div class="numrow">
+                                    <p class="tlt f-fl"><em>商品应付总计：</em></p>
+                                    <p class="numval"><em>¥79.00</em></p>
+                                </div>
+                                <!--Regular if20-->
+                                <div class="numrow">
+                                    <p class="tlt f-fl">
+                                        <!--Regular if21-->
+                                        <!--Regular if22-->
+                                        <div class="m-feelist" style="z-index: 102;">
+                                            <i class="ask"></i>
+                                            <div class="logisbox">
+                                                <h4>运费清单</h4>
+                                                <table class="feetable">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>发货地</th>
+                                                            <th width="50">运费</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tfoot>
+                                                        <tr>
+                                                            <td>合计</td>
+                                                            <td class="f-fwb">¥10.00</td>
+                                                        </tr>
+                                                    </tfoot>
+                                                    <tbody>
+                                                        <!--Regular list-->
+                                                        <!--Regular if38-->
+                                                    </tbody>
+                                                </table>
+                                                <div class="arr"><i class="bd">◆</i><i class="bg">◆</i></div>
+                                            </div>
+                                        </div>
+                                        <em>运费：</em>
+                                    </p>
+                                    <p class="numval"><em>¥10.00</em></p>
+                                </div>
+                                <div class="numrow">
+                                    <p class="tlt f-fl">
+                                        <!--Regular if24-->
+                                        <em>税费：</em>
+                                    </p>
+                                    <p class="numval"><em>¥0.00</em></p>
+                                </div>
+                                <div class="numrow">
+                                    <p class="tlt f-fl"><em>应付金额：</em></p>
+                                    <em class="numval"><span class="totalnum">¥89.00</span></em>
+                                </div>
+                                <!--Regular if25-->
+                                <div class="btnrow f-cb">
+                                    <a class="z-submitbtn ">提交订单</a>
+                                    <!--Regular if26-->
+                                    <!--Regular if27-->
+                                </div>
+                                <!--Regular if28-->
+                                <p class="addr">详细地址 收　陕西省西安市雁塔区　电话 137****1513</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m-agree">
+                        <label class="m-checkbox m-checked">
+                            <span class="box" name="agree" disabled="disabled"><i></i><em></em></span>
+                        </label>
+                        <label for="agree">本人同意并接受
+                            <a target="_blank" href="/footer/agreement.shtml">《网易考拉海购服务协议》</a>与
+                            <a class="wt">《进口个人委托申报委托》
+            <span class="tiplayer"><b class="arr"></b>本人承诺所购买商品系个人合理自用，针对保税区发货的各种商品，现委托商家代理申报、代缴税款等通关事宜，本人保证遵守《海关法》和国家相关法律法规，保证所提供的身份信息和收货信息真实完整，无侵犯他人权益的行为，以上委托关系系如实填写，本人愿意接受海关、检验检疫机构及其他监管部门的监管，并承担相应法律责任。</span>
+        </a>
+                        </label>
+                    </div>
+                </div>
+                <!--Regular if5-->
+            </div>
+        </div>
+    </article>
+    <table class="m-modaltbl">
+        <tbody>
+            <tr>
+                <td class="cell">
+                    <div class="modal iDialogContent m-dialog-address iDialogAniCore" style="width: 660px;">
+                        <div class="modal-row">
+                            <div class="modal-dialog modal-cell">
+                                <div class="modal-content">
+                                    <div class="iDialogHead">
+                                        <h4 class="modal-title" id="myModalLabel">新增收货地址</h4>
+                                        <!--Regular if39-->
+                                        <a class="iDialogClose" href="javascript:void(0);"></a>
+                                    </div>
+                                    <div class="modal-body">
+                                        <!--inlcude-->
+                                        <div class="m-modal-message">
+                                            <!--inlcude-->
+                                            <div id="J_addressFormBox" class="m_myaddress">
+                                                <!--Regular if40-->
+                                                <div class="item first clearfix">
+                                                    <span class="item-label"><i>*</i>&nbsp;所在地区</span>
+                                                    <span class="nselect-wrap " style="width: 140px; display: inline-block;">
+	<div class="nselector">
+		<div class="result-wrap" style="font-size: 12px; padding-left: 16px; padding-right: 16px; height: 34px; line-height: 34px;">
+			<div class="result ellipsis" style="width: 100%;">--省/直辖市--</div>
+			<div class="cp-arrow cp-arrow-down" style="top: 15.5px;"></div>
+		</div>
+		<div class="options-wrap" style="top: 36px;">
+			<div class="options" style="display: none;">
+				<ul>
+					<!--Regular list-->
+					<li>
+						<a hidefocus="true" href="javascript:;" class="option ellipsis curr" title="--省/直辖市--" style="font-size: 12px; padding-left: 16px; padding-right: 16px; width: 100%; height: 34px; line-height: 34px; display: block;">--省/直辖市--</a>
+					</li>
+					
+					<li>
+						<a hidefocus="true" href="javascript:;" class="option ellipsis " title="北京市" style="font-size: 12px; padding-left: 16px; padding-right: 16px; width: 100%; height: 34px; line-height: 34px; display: block;">北京市</a>
+					</li>
+					
+					<li>
+						<a hidefocus="true" href="javascript:;" class="option ellipsis " title="天津市" style="font-size: 12px; padding-left: 16px; padding-right: 16px; width: 100%; height: 34px; line-height: 34px; display: block;">天津市</a>
+					</li>
+					
+					<li>
+						<a hidefocus="true" href="javascript:;" class="option ellipsis " title="河北省" style="font-size: 12px; padding-left: 16px; padding-right: 16px; width: 100%; height: 34px; line-height: 34px; display: block;">河北省</a>
+					</li>
+					
+					<li>
+						<a hidefocus="true" href="javascript:;" class="option ellipsis " title="山西省" style="font-size: 12px; padding-left: 16px; padding-right: 16px; width: 100%; height: 34px; line-height: 34px; display: block;">山西省</a>
+					</li>
+					
+					<li>
+						<a hidefocus="true" href="javascript:;" class="option ellipsis " title="内蒙古自治区" style="font-size: 12px; padding-left: 16px; padding-right: 16px; width: 100%; height: 34px; line-height: 34px; display: block;">内蒙古自治区</a>
+					</li>
+					
+					<li>
+						<a hidefocus="true" href="javascript:;" class="option ellipsis " title="辽宁省" style="font-size: 12px; padding-left: 16px; padding-right: 16px; width: 100%; height: 34px; line-height: 34px; display: block;">辽宁省</a>
+					</li>
+					
+					<li>
+						<a hidefocus="true" href="javascript:;" class="option ellipsis " title="吉林省" style="font-size: 12px; padding-left: 16px; padding-right: 16px; width: 100%; height: 34px; line-height: 34px; display: block;">吉林省</a>
+					</li>
+					
+					<li>
+						<a hidefocus="true" href="javascript:;" class="option ellipsis " title="黑龙江省" style="font-size: 12px; padding-left: 16px; padding-right: 16px; width: 100%; height: 34px; line-height: 34px; display: block;">黑龙江省</a>
+					</li>
+					
+					<li>
+						<a hidefocus="true" href="javascript:;" class="option ellipsis " title="上海市" style="font-size: 12px; padding-left: 16px; padding-right: 16px; width: 100%; height: 34px; line-height: 34px; display: block;">上海市</a>
+					</li>
+					
+					<li>
+						<a hidefocus="true" href="javascript:;" class="option ellipsis " title="江苏省" style="font-size: 12px; padding-left: 16px; padding-right: 16px; width: 100%; height: 34px; line-height: 34px; display: block;">江苏省</a>
+					</li>
+					
+					<li>
+						<a hidefocus="true" href="javascript:;" class="option ellipsis " title="浙江省" style="font-size: 12px; padding-left: 16px; padding-right: 16px; width: 100%; height: 34px; line-height: 34px; display: block;">浙江省</a>
+					</li>
+					
+					<li>
+						<a hidefocus="true" href="javascript:;" class="option ellipsis " title="安徽省" style="font-size: 12px; padding-left: 16px; padding-right: 16px; width: 100%; height: 34px; line-height: 34px; display: block;">安徽省</a>
+					</li>
+					
+					<li>
+						<a hidefocus="true" href="javascript:;" class="option ellipsis " title="福建省" style="font-size: 12px; padding-left: 16px; padding-right: 16px; width: 100%; height: 34px; line-height: 34px; display: block;">福建省</a>
+					</li>
+					
+					<li>
+						<a hidefocus="true" href="javascript:;" class="option ellipsis " title="江西省" style="font-size: 12px; padding-left: 16px; padding-right: 16px; width: 100%; height: 34px; line-height: 34px; display: block;">江西省</a>
+					</li>
+					
+					<li>
+						<a hidefocus="true" href="javascript:;" class="option ellipsis " title="山东省" style="font-size: 12px; padding-left: 16px; padding-right: 16px; width: 100%; height: 34px; line-height: 34px; display: block;">山东省</a>
+					</li>
+					
+					<li>
+						<a hidefocus="true" href="javascript:;" class="option ellipsis " title="河南省" style="font-size: 12px; padding-left: 16px; padding-right: 16px; width: 100%; height: 34px; line-height: 34px; display: block;">河南省</a>
+					</li>
+					
+					<li>
+						<a hidefocus="true" href="javascript:;" class="option ellipsis " title="湖北省" style="font-size: 12px; padding-left: 16px; padding-right: 16px; width: 100%; height: 34px; line-height: 34px; display: block;">湖北省</a>
+					</li>
+					
+					<li>
+						<a hidefocus="true" href="javascript:;" class="option ellipsis " title="湖南省" style="font-size: 12px; padding-left: 16px; padding-right: 16px; width: 100%; height: 34px; line-height: 34px; display: block;">湖南省</a>
+					</li>
+					
+					<li>
+						<a hidefocus="true" href="javascript:;" class="option ellipsis " title="广东省" style="font-size: 12px; padding-left: 16px; padding-right: 16px; width: 100%; height: 34px; line-height: 34px; display: block;">广东省</a>
+					</li>
+					
+					<li>
+						<a hidefocus="true" href="javascript:;" class="option ellipsis " title="广西壮族自治区" style="font-size: 12px; padding-left: 16px; padding-right: 16px; width: 100%; height: 34px; line-height: 34px; display: block;">广西壮族自治区</a>
+					</li>
+					
+					<li>
+						<a hidefocus="true" href="javascript:;" class="option ellipsis " title="海南省" style="font-size: 12px; padding-left: 16px; padding-right: 16px; width: 100%; height: 34px; line-height: 34px; display: block;">海南省</a>
+					</li>
+					
+					<li>
+						<a hidefocus="true" href="javascript:;" class="option ellipsis " title="重庆市" style="font-size: 12px; padding-left: 16px; padding-right: 16px; width: 100%; height: 34px; line-height: 34px; display: block;">重庆市</a>
+					</li>
+					
+					<li>
+						<a hidefocus="true" href="javascript:;" class="option ellipsis " title="四川省" style="font-size: 12px; padding-left: 16px; padding-right: 16px; width: 100%; height: 34px; line-height: 34px; display: block;">四川省</a>
+					</li>
+					
+					<li>
+						<a hidefocus="true" href="javascript:;" class="option ellipsis " title="贵州省" style="font-size: 12px; padding-left: 16px; padding-right: 16px; width: 100%; height: 34px; line-height: 34px; display: block;">贵州省</a>
+					</li>
+					
+					<li>
+						<a hidefocus="true" href="javascript:;" class="option ellipsis " title="云南省" style="font-size: 12px; padding-left: 16px; padding-right: 16px; width: 100%; height: 34px; line-height: 34px; display: block;">云南省</a>
+					</li>
+					
+					<li>
+						<a hidefocus="true" href="javascript:;" class="option ellipsis " title="西藏自治区" style="font-size: 12px; padding-left: 16px; padding-right: 16px; width: 100%; height: 34px; line-height: 34px; display: block;">西藏自治区</a>
+					</li>
+					
+					<li>
+						<a hidefocus="true" href="javascript:;" class="option ellipsis " title="陕西省" style="font-size: 12px; padding-left: 16px; padding-right: 16px; width: 100%; height: 34px; line-height: 34px; display: block;">陕西省</a>
+					</li>
+					
+					<li>
+						<a hidefocus="true" href="javascript:;" class="option ellipsis " title="甘肃省" style="font-size: 12px; padding-left: 16px; padding-right: 16px; width: 100%; height: 34px; line-height: 34px; display: block;">甘肃省</a>
+					</li>
+					
+					<li>
+						<a hidefocus="true" href="javascript:;" class="option ellipsis " title="青海省" style="font-size: 12px; padding-left: 16px; padding-right: 16px; width: 100%; height: 34px; line-height: 34px; display: block;">青海省</a>
+					</li>
+					
+					<li>
+						<a hidefocus="true" href="javascript:;" class="option ellipsis " title="宁夏回族自治区" style="font-size: 12px; padding-left: 16px; padding-right: 16px; width: 100%; height: 34px; line-height: 34px; display: block;">宁夏回族自治区</a>
+					</li>
+					
+					<li>
+						<a hidefocus="true" href="javascript:;" class="option ellipsis " title="新疆维吾尔自治区" style="font-size: 12px; padding-left: 16px; padding-right: 16px; width: 100%; height: 34px; line-height: 34px; display: block;">新疆维吾尔自治区</a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+	</div>
+</span>
+                                                    <span class="nselect-wrap " style="width: 150px; display: none;">
+	<div class="nselector">
+		<div class="result-wrap" style="font-size: 12px; padding-left: 16px; padding-right: 16px; height: 34px; line-height: 34px;">
+			<div class="result ellipsis" style="width: 100%;"></div>
+			<div class="cp-arrow cp-arrow-down" style="top: 15.5px;"></div>
+		</div>
+		<div class="options-wrap" style="top: 36px;">
+			<div class="options" style="display: none;">
+				<ul>
+					<!--Regular list-->
+				</ul>
+			</div>
+		</div>
+	</div>
+</span>
+                                                    <span class="nselect-wrap " style="width: 150px; display: none;">
+	<div class="nselector">
+		<div class="result-wrap" style="font-size: 12px; padding-left: 16px; padding-right: 16px; height: 34px; line-height: 34px;">
+			<div class="result ellipsis" style="width: 100%;"></div>
+			<div class="cp-arrow cp-arrow-down" style="top: 15.5px;"></div>
+		</div>
+		<div class="options-wrap" style="top: 36px;">
+			<div class="options" style="display: none;">
+				<ul>
+					<!--Regular list-->
+				</ul>
+			</div>
+		</div>
+	</div>
+</span>
+                                                    <p class="i-error" style="display: none;"></p>
+                                                </div>
+                                                <div class="item clearfix" id="J_streetBox">
+                                                    <span class="item-label"><i>*</i>&nbsp;详细地址</span>
+                                                    <textarea name="address" class="item-textarea  " autocomplete="off" placeholder="无需重复填写省市区，小于75个字" id="auto-id-1483598643213"></textarea>
+                                                    <p class="i-error" style="display: none;"></p>
+                                                </div>
+                                                <div class="item item-fullname clearfix">
+                                                    <span class="item-label"><i>*</i>&nbsp;收货人姓名</span>
+                                                    <!--Regular if41-->
+                                                    <input type="text" name="fullname2" class="item-input item-input-fullname  " placeholder="不能为昵称、X先生、X小姐等，请使用真实姓名" id="auto-id-1483598643214">
+                                                    <p class="i-error" style="display: none;"></p>
+                                                </div>
+                                                <div class="item clearfix">
+                                                    <span class="item-label"><i>*</i>&nbsp;手机号码</span>
+                                                    <input type="text" name="mobile" class="item-input item-input-mobile  " autocomplete="off" placeholder="手机号码、电话号码必须填一项" id="auto-id-1483598643215">
+                                                    <p class="i-error" style="display: none;"></p>
+                                                </div>
+                                                <div class="item clearfix">
+                                                    <span class="item-label">电话号码</span>
+                                                    <input type="text" name="phoneAreaNum" class="item-input areacode  " placeholder="区号" id="auto-id-1483598643216">
+                                                    <span>&nbsp;-&nbsp;</span>
+                                                    <input type="text" name="phoneNum" class="item-input telephone  " placeholder="电话号码" id="auto-id-1483598643217">
+                                                    <span>&nbsp;-&nbsp;</span>
+                                                    <input type="text" name="phoneExtNum" class="item-input ext  " placeholder="分机号(可选)" id="auto-id-1483598643218">
+                                                    <p class="i-error" style="display: none;"></p>
+                                                </div>
+                                                <div class="item clearfix">
+                                                    <span class="item-label">邮箱</span>
+                                                    <input type="text" name="email" class="item-input  " placeholder="接受订单提醒邮件，便于您及时了解订单状态" id="auto-id-1483598643219">
+                                                    <p class="i-error" style="display: none;"></p>
+                                                </div>
+                                                <div class="item-bottom clearfix">
+                                                    <div class="ckb">
+                                                        <label id="J_checkbox" class="m-checkbox">
+                                                            <span class="box"><i></i><em></em></span>设为默认地址
+                                                        </label>
+                                                    </div>
+                                                    <!--Regular if42-->
+                                                    <button class="item-cancle">取消</button>
+                                                    <button class="item-submit">保存新地址</button>
+                                                </div>
+                                                <input type="hidden" value="" name="oldName">
+                                                <input type="hidden" value="" name="oldIdNum">
+                                                <input type="hidden" value="" name="oldIdNumString">
+                                            </div>
+                                        </div>
+                                        <div class="m-modal-footer">
+                                            <!--Regular if43-->
+                                            <!--Regular if44-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="m-modalmask"></div>
+</body>
+
+</html>
